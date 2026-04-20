@@ -99,10 +99,9 @@ export function Navbar() {
 
       <div
         className={cn(
-          'fixed inset-0 z-[60] flex flex-col transition-transform duration-300 md:hidden',
+          'fixed inset-0 z-[60] flex flex-col bg-bg transition-transform duration-300 md:hidden',
           open ? 'translate-x-0' : 'translate-x-full',
         )}
-        style={{ backgroundColor: 'rgba(6,7,13,0.98)' }}
         aria-hidden={!open}
       >
         <div
