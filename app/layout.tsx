@@ -17,6 +17,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://impactnexus.io'),
   title: 'Impact Nexus — Building Digital Solutions That Matter',
   description:
     'Impact Nexus is a product-driven tech company building scalable digital tools for healthcare, fintech, and commerce.',

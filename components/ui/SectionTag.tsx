@@ -10,7 +10,7 @@ export function SectionTag({ children, className }: SectionTagProps) {
   return (
     <span
       className={cn(
-        'text-[10px] font-semibold uppercase text-accent',
+        'text-[11px] font-semibold uppercase text-accent',
         className,
       )}
       style={{ letterSpacing: '1.8px' }}

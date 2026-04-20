@@ -15,7 +15,7 @@ type ButtonProps = {
 }
 
 const base =
-  'inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-[13px] font-medium tracking-tight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50'
+  'inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-[14px] font-medium tracking-tight transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50'
 
 const variants = {
   primary:

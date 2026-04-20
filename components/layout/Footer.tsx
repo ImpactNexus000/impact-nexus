@@ -9,11 +9,11 @@ export function Footer() {
     <footer className="border-t border-[color:var(--border)]">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-5 py-8 md:flex-row md:justify-between md:px-8">
         <div className="flex flex-col items-center gap-2 md:flex-row md:gap-4">
-          <span className="font-display text-[16px] font-bold text-text">
+          <span className="font-display text-[17px] font-bold text-text">
             Impact<span className="text-accent">Nexus</span>
           </span>
-          <span className="text-[12px] text-muted">
-            © 2025 Impact Nexus. All rights reserved.
+          <span className="text-[13px] text-muted">
+            © 2026 Impact Nexus. All rights reserved.
           </span>
         </div>
 
@@ -22,7 +22,7 @@ export function Footer() {
             <a
               key={l.label}
               href={l.href}
-              className="text-[12px] text-muted transition-colors duration-200 hover:text-text"
+              className="text-[13px] text-muted transition-colors duration-200 hover:text-text"
             >
               {l.label}
             </a>

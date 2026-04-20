@@ -16,15 +16,15 @@ export function PillarCard({ icon, title, description, className }: PillarCardPr
       )}
     >
       <div
-        className="flex h-[34px] w-[34px] flex-none items-center justify-center rounded-lg text-[16px]"
+        className="flex h-[40px] w-[40px] flex-none items-center justify-center rounded-lg text-[18px]"
         style={{ background: 'var(--accent-glow)' }}
         aria-hidden="true"
       >
         {icon}
       </div>
       <div className="flex flex-col gap-1">
-        <h3 className="font-display text-[15px] font-semibold text-text">{title}</h3>
-        <p className="text-[13px] leading-relaxed text-subtle">{description}</p>
+        <h3 className="font-display text-[16px] font-semibold text-text">{title}</h3>
+        <p className="text-[14px] leading-relaxed text-subtle">{description}</p>
       </div>
     </div>
   )

@@ -62,14 +62,14 @@ export function About() {
           </motion.div>
           <motion.h2
             variants={reveal}
-            className="font-display text-[30px] font-bold leading-[1.1] text-text md:text-[36px]"
+            className="font-display text-[32px] font-bold leading-[1.1] text-text md:text-[40px]"
             style={{ letterSpacing: '-0.8px' }}
           >
             We don&apos;t build features. We solve problems.
           </motion.h2>
           <motion.p
             variants={reveal}
-            className="max-w-[460px] text-[15px] leading-relaxed text-subtle"
+            className="max-w-[480px] text-[16px] leading-relaxed text-subtle"
           >
             Impact Nexus is a small team of product engineers shipping tools for
             healthcare, fintech, and commerce — with a bias toward the

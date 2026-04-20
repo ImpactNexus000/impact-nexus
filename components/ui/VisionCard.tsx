@@ -14,8 +14,8 @@ export function VisionCard({ title, description, className }: VisionCardProps) {
         className,
       )}
     >
-      <h3 className="font-display text-[16px] font-medium text-text">{title}</h3>
-      <p className="mt-2 text-[14px] leading-relaxed text-subtle">{description}</p>
+      <h3 className="font-display text-[18px] font-semibold text-text">{title}</h3>
+      <p className="mt-2 text-[15px] leading-relaxed text-subtle">{description}</p>
     </div>
   )
 }

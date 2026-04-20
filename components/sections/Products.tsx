@@ -34,14 +34,14 @@ export function Products() {
           </motion.div>
           <motion.h2
             variants={reveal}
-            className="font-display text-[30px] font-bold leading-[1.1] text-text md:text-[36px]"
+            className="font-display text-[32px] font-bold leading-[1.1] text-text md:text-[40px]"
             style={{ letterSpacing: '-0.8px' }}
           >
             What we&apos;re building
           </motion.h2>
           <motion.p
             variants={reveal}
-            className="text-[15px] leading-relaxed text-subtle"
+            className="text-[16px] leading-relaxed text-subtle"
           >
             Three products in motion — each solving a tangible problem for a
             specific community. Built with care, shipped with discipline.

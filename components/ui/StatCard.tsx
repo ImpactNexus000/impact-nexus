@@ -14,10 +14,10 @@ export function StatCard({ value, label, className }: StatCardProps) {
         className,
       )}
     >
-      <div className="font-display text-[28px] font-bold leading-none text-text">
+      <div className="font-display text-[34px] font-bold leading-none text-text">
         {value}
       </div>
-      <div className="mt-2 text-[11px] font-medium uppercase tracking-[0.12em] text-muted">
+      <div className="mt-2 text-[12px] font-medium uppercase tracking-[0.12em] text-muted">
         {label}
       </div>
     </div>

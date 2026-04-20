@@ -46,10 +46,10 @@ export function ProductCard({
 
       <div className="relative flex flex-col gap-4">
         <Badge status={status} />
-        <h3 className="font-display text-[20px] font-bold leading-tight text-text">
+        <h3 className="font-display text-[22px] font-bold leading-tight text-text">
           {name}
         </h3>
-        <p className="text-[13px] leading-relaxed text-muted">{description}</p>
+        <p className="text-[14px] leading-relaxed text-muted">{description}</p>
       </div>
 
       <div className="relative mt-8 pt-5">
@@ -57,7 +57,7 @@ export function ProductCard({
           href={href}
           target={href.startsWith('http') ? '_blank' : undefined}
           rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-          className="inline-flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.14em] text-subtle transition-colors duration-200 hover:text-accent"
+          className="inline-flex items-center gap-2 text-[13px] font-medium uppercase tracking-[0.14em] text-subtle transition-colors duration-200 hover:text-accent"
         >
           {linkLabel}
           <span aria-hidden="true" className="transition-transform duration-200 group-hover:translate-x-0.5">

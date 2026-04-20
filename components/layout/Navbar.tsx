@@ -12,7 +12,7 @@ const links = [
 
 function Logo() {
   return (
-    <a href="#" className="font-display text-[18px] font-bold tracking-tight text-text">
+    <a href="#" className="font-display text-[20px] font-bold tracking-tight text-text">
       Impact<span className="text-accent">Nexus</span>
     </a>
   )
@@ -56,7 +56,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-[13px] font-medium text-subtle transition-colors duration-200 hover:text-text"
+              className="text-[14px] font-medium text-subtle transition-colors duration-200 hover:text-text"
             >
               {link.label}
             </a>

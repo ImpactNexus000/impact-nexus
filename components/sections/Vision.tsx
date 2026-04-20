@@ -55,7 +55,7 @@ export function Vision() {
 
           <motion.blockquote
             variants={reveal}
-            className="border-l-[3px] border-accent pl-6 font-display text-[24px] font-bold leading-[1.3] text-text md:text-[28px]"
+            className="border-l-[3px] border-accent pl-6 font-display text-[26px] font-bold leading-[1.3] text-text md:text-[32px]"
             style={{ letterSpacing: '-0.4px' }}
           >
             &ldquo;Technology should reach the people who need it{' '}
@@ -65,7 +65,7 @@ export function Vision() {
 
           <motion.p
             variants={reveal}
-            className="max-w-[460px] text-[15px] leading-relaxed text-subtle"
+            className="max-w-[480px] text-[16px] leading-relaxed text-subtle"
           >
             We measure our work by the distance between the problem and the
             person it affects. The closer we get, the better we build.

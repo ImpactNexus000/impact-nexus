@@ -45,7 +45,7 @@ export function Hero() {
         >
           <motion.span
             variants={item}
-            className="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/10 px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-accent"
+            className="inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/10 px-3.5 py-1.5 text-[12px] font-semibold uppercase tracking-[0.14em] text-accent"
           >
             <span className="inline-block h-1.5 w-1.5 rounded-full bg-accent pulse-dot" />
             Product-Driven Tech Company
@@ -55,8 +55,8 @@ export function Hero() {
             variants={item}
             className="font-display font-extrabold leading-[1.05] text-text"
             style={{
-              fontSize: 'clamp(32px, 7vw, 58px)',
-              letterSpacing: '-1.5px',
+              fontSize: 'clamp(36px, 7.2vw, 64px)',
+              letterSpacing: '-1.8px',
             }}
           >
             Building digital solutions that{' '}
@@ -65,7 +65,7 @@ export function Hero() {
 
           <motion.p
             variants={item}
-            className="max-w-[480px] text-[16px] leading-relaxed text-subtle"
+            className="max-w-[520px] text-[17px] leading-relaxed text-subtle"
           >
             Impact Nexus is a product studio turning complex real-world problems
             into elegant, scalable digital tools — built for the people who need
