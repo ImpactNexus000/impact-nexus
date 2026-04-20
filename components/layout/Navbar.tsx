@@ -99,25 +99,70 @@ export function Navbar() {
 
       <div
         className={cn(
-          'fixed inset-0 top-[65px] z-40 flex flex-col gap-6 border-t border-[color:var(--border)] px-6 py-8 transition-transform duration-300 md:hidden',
+          'fixed inset-0 z-[60] flex flex-col transition-transform duration-300 md:hidden',
           open ? 'translate-x-0' : 'translate-x-full',
         )}
         style={{ backgroundColor: 'rgba(6,7,13,0.98)' }}
+        aria-hidden={!open}
       >
-        {links.map((link) => (
-          <a
-            key={link.href}
-            href={link.href}
+        <div
+          className="pointer-events-none absolute left-1/2 top-[-140px] h-[420px] w-[420px] -translate-x-1/2"
+          aria-hidden="true"
+          style={{
+            background:
+              'radial-gradient(ellipse, rgba(91,110,245,0.18) 0%, transparent 70%)',
+          }}
+        />
+
+        <div className="relative flex items-center justify-between border-b border-[color:var(--border)] px-5 py-4">
+          <Logo />
+          <button
+            type="button"
+            aria-label="Close menu"
             onClick={() => setOpen(false)}
-            className="font-display text-[24px] font-semibold text-text"
+            className="relative flex h-10 w-10 items-center justify-center rounded-md border border-[color:var(--border)] text-text transition-colors duration-200 hover:border-[color:var(--border-hover)]"
           >
-            {link.label}
-          </a>
-        ))}
-        <div className="mt-4">
-          <Button variant="primary" href="#contact" onClick={() => setOpen(false)}>
+            <span className="absolute block h-[1.5px] w-5 rotate-45 bg-text" />
+            <span className="absolute block h-[1.5px] w-5 -rotate-45 bg-text" />
+          </button>
+        </div>
+
+        <nav className="relative flex flex-col">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className="group flex items-center justify-between border-b border-[color:var(--border)] px-5 py-6 transition-colors duration-200 hover:bg-white/[0.02]"
+            >
+              <span className="font-display text-[26px] font-semibold text-text">
+                {link.label}
+              </span>
+              <span
+                aria-hidden="true"
+                className="text-[18px] text-muted transition-transform duration-200 group-hover:translate-x-1 group-hover:text-accent"
+              >
+                →
+              </span>
+            </a>
+          ))}
+        </nav>
+
+        <div className="relative mt-auto flex flex-col gap-4 border-t border-[color:var(--border)] p-5">
+          <Button
+            variant="primary"
+            href="#contact"
+            onClick={() => setOpen(false)}
+            className="w-full"
+          >
             Get in Touch →
           </Button>
+          <a
+            href="mailto:impactnexus000@gmail.com"
+            className="text-center text-[13px] text-muted transition-colors duration-200 hover:text-text"
+          >
+            impactnexus000@gmail.com
+          </a>
         </div>
       </div>
     </header>
